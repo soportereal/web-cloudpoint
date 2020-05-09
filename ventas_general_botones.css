@@ -1,0 +1,66 @@
+.ventasgeneral {
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    padding: 0px;
+    margin: 0;
+    grid-template-rows: 50px 50px auto 50px;
+    grid-template-areas: 'botones' 'inicial' 'contenido' 'final';
+}
+
+.ventasgeneral .botones {
+    grid-area: botones;
+    border: 1px rgb(146, 143, 141) solid;
+    background-color: rgb(194, 194, 196);
+    font-size: 30px;
+    display: flex;
+}
+
+.botones .titulo {
+    grid-area: botones;
+    color: rgb(39, 59, 87);
+    padding-left: 1cm;
+    padding-right: 7cm;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botones .boton {
+    grid-area: botones;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+
+.ventasgeneral .inicial {
+    grid-area: inicial;
+    border: 1px saddlebrown solid;
+    background-color: skyblue;
+}
+
+.ventasgeneral .contenido {
+    grid-area: contenido;
+    border: 1px rgb(190, 186, 184) solid;
+    background-color: rgb(99, 184, 88);
+}
+
+.ventasgeneral .final {
+    grid-area: final;
+    border: 1px saddlebrown solid;
+    background-color: rgb(173, 122, 73);
+}
+
+
+/* CSS BOTONES */
+
+
+/* CSS FITLROS */
+
+
+/* CSSS CONTENIDO */
+
+
+/* CSS TOTALES */

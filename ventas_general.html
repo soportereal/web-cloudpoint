@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <!-- <meta charset='ISO-8859-1'> -->
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <meta name='keywords' content='HTML,CSS,XML,JavaScript'>
+        <!-- <link rel='stylesheet' href='ventas_general.css'> -->
+        <link rel='stylesheet' href='ventas_general_botones.css'>
+        <link rel='stylesheet' href='ventas_general.css'>
+        <link rel='stylesheet' href='ventas_general_final.css'>
+    </head>
+    <body style='margin: 0px'>
+
+        <div class='ventasgeneral'>
+            <div class="botones">
+                <div class="botones">
+                    <div class="titulo">
+                        <p1>Ventas</p1>
+                    </div>
+                    <div class="boton">
+                        <input style="background-color: rgb(205, 206, 207)" type="button" value="Agrupado CTA">
+                    </div>
+                    <div class="boton">
+                        <input style="background-color: rgb(205, 206, 207)" type="button" value="Agrupado Cedula">
+                    </div>
+                    <div class="boton">
+                        <input style="background-color: rgb(205, 206, 207)" type="button" value="Opciones">
+                    </div>
+                    <div class="boton">
+                        <input style="background-color: rgb(205, 206, 207)" type="button" value="Refrescar">
+                    </div>
+                    <div class="boton">
+                        <input style="background-color: rgb(205, 206, 207)" type="button" value="Excel CSV">
+                    </div>
+                    <div class="boton">
+                        <input style="background-color: rgb(205, 206, 207)" type="button" value="Imprimir">
+                    </div>
+                    <div class="boton">
+                        <input style="background-color: rgb(205, 206, 207)" type="button" value="Regresar">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Roberto -->
+            <div class="inicial">
+                <!-- <a>FILTROS DE REPORTE DE VENTAS</a> -->
+
+                <div id="fechas" class="fechas">
+                    <label id="lFechaInicio" class="label" for="fechaInicio" >Desde:</label>
+                    <input type ="date" id="iFechaInicio" class="iFechas" name="fechaInicio" 
+                        value="1900-01-01"
+                        min="2020-01-01" max="2020-12-31">
+                        <br><br>
+                    <label id="lFechaFinal" class="label" for="fechaFinal">Hasta:</label> 
+                    <input type ="date" id="iFechaFinal" class="iFechas" name="fechaFinal" 
+                        value="2100-12-31"
+                        min="2020-01-01" max="2020-12-31">
+                </div>
+                
+                <div id="select1" class="select1">
+                    <label id="lEstado" class="label" for="estado">Estado</label>
+                        <select id="sEstado" class="select" name="estado"> 
+                            <option value="Todo">0-Todo</option>
+                            <option value="Procesando">1-Procesando</option>
+                            <option value="Procesada">2-Procesada</option>
+                            <option value="Nula">3-Nula</option>
+                            <option value="Cajas">4-Caja</option>
+                            <option value="Rechazadas">5-Rechazadas</option>
+                        </select><br><br>
+                    <label id="lPago" class="label" for="pago">Pago</label>
+                        <select id="sPago" class="select" name="pago">
+                            <option value="Todo">0-Todo</option>
+                            <option value="Contado">1-Contado</option>
+                            <option value="Credito">2-Crédito</option>
+                        </select>
+                </div>
+
+                <div id="select2" class="select2">
+                    <label id="lTipo" class="label" for="tipo">Tipo</label>
+                    <select id="sTipo" class="select" name="tipo"> 
+                        <option value="Facturas">1-Facturas</option>
+                        <option value="Proformas">2-Proformas</option>
+                        <option value="Pedidos">3-Pedidos</option>
+                        <option value="Proforma-G">4-Proforma-G</option>
+                    </select><br><br>
+                    <label id="lMedio" class="label" for="medio">Medio</label>
+                    <select id="sMedio" class="select" name="medio">
+                        <option value="Todo">00-Todo</option>
+                        <option value="Efectivo">01-Efectivo</option>
+                        <option value="Tarjeta">02-Tarjeta</option>
+                    </select>    
+                </div>
+
+                <div id="select3" class="select3">
+                    <label id="lEntrega" class="label" for="entrega">Entrega</label>
+                    <select id="sEntrega" class="select" name="entrega"> 
+                        <option value="Local">1-Local</option>
+                        <option value="Express">2-Express</option>
+                    </select><br><br>
+                    <label id="lCaja" class="label" for ="caja"># Caja</label>
+                    <input id="iCaja" class="input" type="number" name="caja">
+                </div>
+
+                
+                <div id="input1" class="input1">
+                    <label id="lUsuario" class="label" for="usuario">Usuario</label>    
+                    <input id="iUsuario" class="input" type="text" name="usuario">
+                    <br><br>
+                    <label id="lAgente" class="label" for ="agente">Agente</label>
+                    <input id="iAgente" class="input" type="text"  name= "agente">
+                </div>
+                    
+                <div id="input2" class="input2">
+                    <label id="lAgenteCliente" class="label" for ="agenteCliente">AgenteCliente</label>
+                    <input id="iAgenteCliente" class="input" type="text"  name= "agenteCliente">
+                    <br><br>
+                    <label id="lMoneda" class="label" for ="moneda">Moneda</label>
+                    <input id="iMoneda" class="input" type="text" name= "moneda">
+                </div>
+
+                <div id="input3" class="input3">
+                    <label id="lNombre" class="label" for ="nombre">Nombre</label>
+                    <input id="iNombre" class="input" type="text" name= "nombre">
+
+                    <label id="lCuenta" class="label" for ="cuenta">Cuenta</label>
+                    <input id="iCuenta" class="input" type="text" name= "cuenta">
+
+                    <label id="lDetalle" class="label" for ="detalle">Detalle</label>
+                    <input id="iDetalle" class="input" type="text" name= "detalle">
+
+                    <label id="lDetalleMedio" class="label" for ="detalleMedio">Detalle Medio</label>
+                    <input id="iDetalleMedio" class="input" type="text" name= "detalleMedio">
+
+                    <label id="lDir" class="label" for ="dir">Dir</label>
+                    <input id="iDir" class="input" type="text" name= "dir">
+                </div>
+
+                <div id="textArea" class="textArea">
+                    <label id="lFacturas" class="label" for ="facturas">Facturas</label>
+                    <textarea id="iFacturas" class="text_area" name="facturas" name="facturas" ></textarea>
+                    <input id="chkNombreEnFacturas" class="nombreEnFacturas" type="checkbox"  name="nombreEnFacturas" value="nombre">
+                    <label id="lNombreEnFacturas" class="label" for ="nombreEnFacturas">Nombre en facturas</label>
+                </div>
+       
+            </div>
+
+            <div class='contenido'>
+                <!-- <a>LISTA COMPLETA DE VENTAS</a>   -->
+            </div>
+            <div class='final'>
+                <!-- <a>TOTALS DE LAS VENTAS</a>   -->
+                <div class='final'>
+                    <!-- <a>TOTALS DE LAS VENTAS</a>   -->
+
+                    <div id="columna1" class="div">
+                        <label id="lItems" class="label" for="items">Items</label>
+                        <input id="iItems" class="input" type="text" name="items"/>
+                    </div>
+
+                    <div id="columna2"  class="div">
+                        <label id="lGravado" class="label" for="gravado">Gravado</label>
+                        <input id="iGravado" class="input" type="text" name="gravado"/><br><br>
+                        <label id="lExonerado" class="label" for="exonerado">Exonerado</label>
+                        <input id="iExonerado" class="input" type="text" name="exonerado"/><br><br>
+                        <label id="lExento" class="label" for="exento">Exento</label>
+                        <input id="iExento" class="input" type="text" name="exento"/>
+                    </div>
+                    <div id="columna3"  class="div">
+                        <label id="lVentaSinIVA" class="label" for="ventaSinIVA">Ventas Sin IVA</label>
+                        <input id="Items" class="input" type="text" name="ventasinIVA"/><br><br>
+                        <label id="lIVA" class="label" for="IVA">IVA</label>
+                        <input id="iIVA" class="input" type="text" name="iva"/><br><br>
+                        <label id="lImpServicio" class="label" for="impServicio">Impuesto Servicio</label>
+                        <input id="Items" class="input" type="text" name="impuestoServicio"/>
+                    </div>
+                    <div id="columna4"  class="div">
+                        <label id="lTotalVentasNeta" class="label" for="totalVentasNetas">Total Ventas Neta</label>
+                        <input id="iTotalVentasNeta" class="input" type="text" name="totalVentasNetas"/>
+                    </div>
+
+                    <!-- <div class="columna1">
+                        <p>ITEMS</p>
+                        <input type="text" id="resultado" />
+                    </div>
+                    <div class="columna2">
+                        <p>GRAVADO</p>
+                        <input type="text" id="resultado" />
+                        <p>EXONERADO</p>
+                        <input type="text" id="resultado" />
+                        <p>EXENTO</p>
+                        <input type="text" id="resultado" />
+                    </div>
+                    <div class="columna3">
+                        <p>VENTA SIN IVA</p>
+                        <input type="text" id="resultado" />
+                        <p>IVA</p>
+                        <input type="text" id="resultado" />
+                        <p>IMP SERV.</p>
+                        <input type="text" id="resultado" />
+                    </div>
+                    <div class="columna4">
+                        <p>TOTAL VENTA NETA</p>
+                        <input type="text" id="resultado" />
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

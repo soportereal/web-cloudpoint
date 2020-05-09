@@ -1,0 +1,131 @@
+/* .ventasgeneral {
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    padding: 0px;
+    margin: 0;
+    grid-template-rows: 50px 220px auto 50px;
+    grid-template-areas: 'botones' 
+                         'inicial' 
+                         'contenido' 
+                         'final';
+} */
+
+/* .ventasgeneral .botones {
+    grid-area: botones;
+    border: 1px saddlebrown solid;
+    background-color: rgb(220, 253, 34);
+} */
+
+/* .ventasgeneral .inicial {
+    grid-area: inicial;
+    border: 1px saddlebrown solid;
+    background-color: skyblue;
+} */
+
+.ventasgeneral .contenido {
+    grid-area: contenido;
+    border: 1px rgb(190, 186, 184) solid;
+    background-color: rgb(99, 184, 88);
+}
+
+.ventasgeneral .final {
+    /* grid-area: final; */
+    /* border: 1px saddlebrown solid; */
+    /* background-color: rgb(188, 188, 190); */
+    /* display: flex; */
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 170px;
+    /* font-family: sans-serif; */
+    /* color: rgb(0, 0, 0); */
+    /* font-size: 10px;  */
+}
+
+#columna1{
+    /* position: absolute; */
+    bottom:0px;
+    float: right;
+    margin: 3px 3px;
+    padding:  5px 3px 1px 7px;
+    width: 250px;
+    height: 30px;
+    background-color: rgb(209, 205, 205);
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  
+  #columna2{
+    float: right;
+    margin: 3px 3px;
+    padding:  5px 3px 1px 7px;
+    width: 250px;
+    height: 130px;
+    background-color: rgb(209, 205, 205);
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+
+  #columna3{
+    float: right;
+    margin: 3px 3px;
+    padding:  5px 3px 1px 7px;
+    width: 300px;
+    height: 130px;
+    background-color: rgb(209, 205, 205);
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+
+ #columna4{
+    float: right;
+    margin: 3px 3px;
+    padding:  5px 3px 1px 7px;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(209, 205, 205);
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+
+  #lItems, #lGravado, #lExonerado, 
+  #lExento{
+    display: inline-block;
+    width: 80px;
+  }
+  
+  #lVentaSinIVA, #lIVA,
+  #lImpServicio{
+    display: inline-block;
+    width: 130px;
+  }
+
+  #lTotalVentasNeta{
+    display: inline-block;
+    width: 130px;
+  }
+
+  #iItems{
+    width: 125px;
+    height: 17px;
+    background-color: rgb(236, 245, 245);
+    border: 1px solid rgb(236, 245, 245) ;
+    border-radius: 5px ;
+  }
+
+
+
+/* CSS BOTONES */
+
+
+/* CSS FITLROS */
+
+
+/* CSSS CONTENIDO */
+
+
+/* CSS TOTALES */
